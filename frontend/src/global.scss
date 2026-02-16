@@ -1,0 +1,41 @@
+@import "@ionic/angular/css/core.css";
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.ranking-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+
+  &.gold { background: #FFD700; color: #333; }
+  &.silver { background: #C0C0C0; color: #333; }
+  &.bronze { background: #CD7F32; color: white; }
+  &.default { background: var(--ion-color-medium); }
+}
+
+.score-highlight {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+ion-card {
+  margin: 8px;
+}
